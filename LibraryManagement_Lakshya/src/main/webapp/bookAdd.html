@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Add Item</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header id="header" class="fixed-top d-flex align-items-center ">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <div class="logo">
+        <h1 class="text-light"><a href="index.html"><span>Shelf<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="1 1 24 24" class="icon-md-heavy"><path fill="currentColor" d="M3.07 10.876C3.623 6.436 7.41 3 12 3a9.15 9.15 0 0 1 6.012 2.254V4a1 1 0 1 1 2 0v4a1 1 0 0 1-1 1H15a1 1 0 1 1 0-2h1.957A7.15 7.15 0 0 0 12 5a7 7 0 0 0-6.946 6.124 1 1 0 1 1-1.984-.248m16.992 1.132a1 1 0 0 1 .868 1.116C20.377 17.564 16.59 21 12 21a9.15 9.15 0 0 1-6-2.244V20a1 1 0 1 1-2 0v-4a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2H7.043A7.15 7.15 0 0 0 12 19a7 7 0 0 0 6.946-6.124 1 1 0 0 1 1.116-.868"></path></svg>Sync</span></a></h1>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <ul>
+            <li><a href="index_2.html">Home</a></li>
+            
+            <li><a class="active" href="bookAdd.html">Add Item</a></li>
+            <li><a href="items.html">Library</a></li>
+            <li><a href="showBorrower.html">Borrower</a></li>
+            <li><a href="index.html">Sign Out</a></li>
+          </ul>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section id="login" data-aos="fade-top" data-aos-easing="ease-in-out" data-aos-duration="1000">
+      <div class="px-4 py-3 my-5 text-center">
+        <h1 class="display-5 fw-light">Register an item to library</h1>
+        <div class="col-lg-6 mx-auto mt-3">
+          <form class="p-4 p-md-5 border rounded-3 bg-light" action="additem" method="post">
+            <div class="form-floating mb-3">
+              <select class="form-select pt-2" aria-label="Default select example" name="itemType">
+                <option selected>Open this select menu</option>
+                <option value="Book">Book</option>
+                <option value="Newspaper">Newspaper</option>
+                <option value="Magzine">Magzine</option>
+              </select>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingInput" placeholder="abc" name="itemName">
+              <label for="floatingInput">Name</label>
+            </div>
+            <div class="form-floating mb-3 d-flex" style="width: 100%;">
+              <input type="text" class="form-control me-3" id="floatingInput" placeholder="ABC123" name="itemId">
+              <button type="button" class="btn btn-outline-primary ps-4 pe-4 fw-bold">Check</button>
+              <label for="floatingInput">Item Id</label>
+            </div>
+            <div class="input-group form-floating mb-3">
+              <span class="input-group-text" style="padding-left: 20px; padding-right:20px; font-size: 1.2rem;">₹</span>
+              <input type="text" class="form-control pt-2" aria-label="Amount (to the nearest dollar)" name="itemPrice">
+              <span class="input-group-text" style="padding-left: 20px; padding-right:20px; font-size: 1.2rem;">.00</span>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingInput" placeholder="abc" name="itemQuantity">
+              <label for="floatingInput">Quantity</label>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary mt-4" type="submit">Register</button>
+          </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
